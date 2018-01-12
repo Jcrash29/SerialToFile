@@ -1,8 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 # launcher.sh
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 cd /
-cd /home/pi
+cd $DIR
 python Com2File.py
 cd /
 
